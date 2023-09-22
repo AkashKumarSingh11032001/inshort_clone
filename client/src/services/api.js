@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const getNews = async () => {
-  const URl = "https://localhost:8000";
+  const URL= "http://localhost:8000";
   try {
     return await axios.get(`${URL}/news`);
   } catch (err) {
