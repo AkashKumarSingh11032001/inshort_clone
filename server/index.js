@@ -5,5 +5,5 @@ const app = express();
 
 const PORT = 8000;
 app.listen(PORT, () => {
-    console.log(`Server Running at PORT ${PORT}`)
+    console.log(`Server running at PORT ${PORT}`)
 })
