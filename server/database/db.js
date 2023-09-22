@@ -1,12 +1,13 @@
-import mongose from "mongose";
+import mongoose from "mongoose";
 
-const connection = () => {
-  const URL = "";
+const Connection = async () => {
+  const URL = `mongodb+srv://akashkumarsingh11032001:iLkXALnppwcOXAOR@cluster0.lutgzyg.mongodb.net/?retryWrites=true&w=majority`;
   try {
-    mongose.connect(URL, {
-      useNewUrlParser: true,
-    });
+    await mongoose.connect(URL, { useNewUrlParser: true });
+    console.log("Database connected Successfully!");
   } catch (err) {
     console.log(`Error while connecting with the database`, err);
   }
 };
+
+export default Connection;
