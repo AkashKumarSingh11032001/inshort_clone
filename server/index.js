@@ -2,6 +2,7 @@ import express from 'express';
 import Connection from './database/db.js';
 import DefaultData from './default.js';
 import Route from './routes/routes.js';
+import cors from 'cors';
 
 // Express app creation
 const app = express();

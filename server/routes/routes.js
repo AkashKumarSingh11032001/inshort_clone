@@ -2,8 +2,9 @@ import express  from "express";
 
 const Route = express.Router();
 
-Route.get('/news',()=>{
+Route.get('/news',(request, required)=>{
     console.log("Akash!");
+    
 })
 
 export default Route; 
