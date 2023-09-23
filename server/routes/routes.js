@@ -1,10 +1,8 @@
 import express  from "express";
+import { getNews } from "../controller/news-controller.js";
 
-const Route = express.Router();
+const route = express.Router();
 
-Route.get('/news',(request, required)=>{
-    console.log("Akash!");
-    
-})
+route.get('/news',getNews)
 
-export default Route; 
+export default route; 
