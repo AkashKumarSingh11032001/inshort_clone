@@ -19,7 +19,7 @@ const Articles = () => {
   return (
     <Box>
       {news.map((data) => (
-        <ArticlesCard />
+        <ArticlesCard article={data}/>
       ))}
     </Box>
   );
