@@ -84,8 +84,8 @@ const ArticlesCard = ({ article }) => {
             <Description>{article.description}</Description>
             <Publisher>
               read more at{" "}
-              <a href={article.link} target="_blank">
-                {article.publisher}
+              <a style={{textDecoration:'none', color:'#000'}} href={article.link} target="_blank">
+                <b>{article.publisher}</b>
               </a>
             </Publisher>
           </RightContainer>
